@@ -1,11 +1,19 @@
 import React, { Component } from "react";
 import "./App.css";
+// import User from "./User";
+import HomeContainer from "./containers/HomeContainer";
+import HeaderContainer from "./containers/HeaderContainer";
 class App extends Component {
   render() {
-    console.warn("check data", this.props.todos);
+    //console.warn("check data", this.props.todos);
     return (
       <div>
-        <button onClick={() => this.props.addTodo()}> click</button>
+        <HeaderContainer />
+
+        <HomeContainer />
+
+        {/* <User data={{ name: " hardiii_8999" }} /> */}
+        {/* <button onClick={() => this.props.addTodo()}> click</button> */}
       </div>
     );
   }
